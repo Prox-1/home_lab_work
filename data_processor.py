@@ -7,5 +7,5 @@ class DataProcessor:
         return self.data
 
     def filter(self, threshold):
-        self.data = [x for x in self.data]
+        self.data = [x for x in self.data if x > threshold]
         return self.data
